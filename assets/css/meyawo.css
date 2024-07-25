@@ -12253,3 +12253,16 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+

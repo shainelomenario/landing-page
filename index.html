@@ -19,7 +19,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Shaine Lomenario</a>
+            <a class="logo" href="#"> Shaine Lomenario </a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -82,16 +82,16 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/linkedin photo.png" class="about-img"
+                    <img src="assets/imgs/linkedin photo.png" class="about-img revealable "
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
-                <div class="about-caption">
+                <div class="about-caption revealable ">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
                         I'm the Marketing Director of 'Code for All' at Queens College. I enjoy playing the piano, video games, and basketball. 
-                        My interest in technology and its real-world applications sparked a deep passion for tech, and I am currently fascinated by AI. 
-                        I am currently attending Queens College, City University of New York, pursuing a Bachelor of Science degree in Computer Science. 
+                        My interest in technology and its real-world applications sparked a deep passion for tech, and AI. I am currently attending
+                        Queens College, City University of New York, pursuing a Bachelor of Science degree in Computer Science. 
                         My goal is to become a Software Engineer, with a growing interest in AI as my journey in computer science progresses. I am excited 
                         to showcase my skills and passion in the tech realm!
                     </p>
@@ -110,9 +110,9 @@
             <!-- container -->
             <div class="container text-center">
                 <!-- <p class="section-subtitle">Recent Posts?</p> -->
-                <h6 class="section-title mb-6"> Experience </h6>
+                <h6 class="section-title mb-6 revealable"> Experience </h6>
                 <!-- blog-wrapper -->
-                <div class="blog-card">
+                <div class="blog-card revealable">
                     <div class="blog-card-header">
                         <img src="assets/imgs/headstarter background.png" class="blog-card-img"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -139,7 +139,7 @@
                 </div><!-- end of blog wrapper -->
     
                 <!-- blog-wrapper -->
-                <div class="blog-card">
+                <div class="blog-card revealable">
                     <div class="blog-card-header">
                         <img src="assets/imgs/code.jpg" class="blog-card-img"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -354,9 +354,9 @@
         <!-- container -->
         <div class="container text-center">
             <!-- <p class="section-subtitle">Recent Posts?</p> -->
-            <h6 class="section-title mb-6" id = "projects"> Projects </h6>
+            <h6 class="section-title mb-6 revealable" id = "projects"> Projects </h6>
             <!-- blog-wrapper -->
-            <div class="blog-card">
+            <div class="blog-card revealable">
                 <div class="blog-card-header">
                     <img src="assets/imgs/Platform.png" class="blog-card-img"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -388,7 +388,7 @@
             </div><!-- end of blog wrapper -->
 
             <!-- blog-wrapper -->
-            <div class="blog-card">
+            <div class="blog-card revealable">
                 <div class="blog-card-header">
                     <img src="assets/imgs/pantry tracker.png" class="blog-card-img"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -415,9 +415,9 @@
         <section class="section" id="service">
             <div class="container text-center">
                 <!-- <p class="section-subtitle">What I Do ?</p> -->
-                <h6 class="section-title mb-6"> Awards and Certifications </h6>
+                <h6 class="section-title mb-6 revealable"> Awards and Certifications </h6>
                 <!-- row -->
-                <div class="row">
+                <div class="row revealable">
                     <div class="col-md-6 col-lg-3">
                         <div class="service-card">
                             <div class="body">
@@ -469,7 +469,7 @@
 
 
     <!-- contact section -->
-    <section class="section" id="contact">
+    <section class="section revealable" id="contact">
         <div class="container text-center">
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
@@ -526,3 +526,32 @@
 </body>
 
 </html>
+
+<script>
+
+let animation = {
+  revealDistance: 150,
+  initialOpacity: 0,
+  transitionDelay: 0,
+  transitionDuration: '1s',
+  transitionProperty: 'all',
+  transitionTimingFunction: 'ease'
+};
+
+let revealableContainers = document.querySelectorAll('.revealable');
+
+function reveal() {
+  for (let i = 0; i < revealableContainers.length; i++) {
+    let windowHeight = window.innerHeight;
+    let topOfRevealableContainer = revealableContainers[i].getBoundingClientRect().top;
+
+    if (topOfRevealableContainer < windowHeight - animation.revealDistance) {
+      revealableContainers[i].classList.add('active');
+    } else {
+      revealableContainers[i].classList.remove('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', reveal);
+</script>
