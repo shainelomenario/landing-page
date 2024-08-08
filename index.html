@@ -503,13 +503,14 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="https://api.web3forms.com/submit" method = "POST" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
+                    <input type="hidden" name="access_key" value= "eba2f986-2932-41e3-be1f-eb92f7b2d686">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" name = "name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" class="form-control" placeholder="Enter Email" name = "email" requried>
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="comment" id="comment" rows="6" class="form-control"
