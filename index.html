@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Personal Portfolio">
     <meta name="author" content="Devcrud">
-    <title> Shaine Lomenario </title>
+    <title>Shaine Lomenario</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    <!-- Typewriter.js library-->
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect/dist/core.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#"> Shaine Lomenario </a>
+            <a class="logo" href="#">Shaine Lomenario</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -31,14 +32,14 @@
                     <a class="link" href="#blog">Experience</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#blog proj">Projects</a>
+                    <a class="link" href="#projects">Projects</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
                 </li>
-                <!-- <li class="item ml-md-3">
-                    <a href="components.html" class="btn btn-primary" target = " ">Components</a>
-                </li> -->
+                <li class="item ml-md-3">
+                    <button id="theme-toggle" class="btn btn-primary">Dark Mode</button>
+                </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
@@ -46,7 +47,7 @@
                 </div>
             </a>
         </div>
-    </nav><!-- End of Page Navbar -->
+    </nav>
 
     <!-- page header -->
     <header id="home" class="header">
@@ -56,11 +57,9 @@
                 <span class="up">Hi! I am </span>
                 <span class="down">Shaine Lomenario</span>
             </h1>
-            <p class="header-subtitle"> Software Engineer</p>
+            <p class="header-subtitle" id="typewriter-swe"></p>
 
-
-
-             <!-- Social Media Icon Buttons -->
+            <!-- Social Media Icon Buttons -->
             <div class="social-buttons">
                 <a href="https://github.com/shainelomenario" class="btn btn-primary btn-icon" target="_blank">
                     <i class="fab fa-github"></i>
@@ -68,25 +67,20 @@
                 <a href="https://www.linkedin.com/in/shaine-lomenario-955168216/" class="btn btn-primary btn-icon" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-               
                 <!-- Add more buttons as needed -->
             </div>
-
         </div>
     </header><!-- end of page header -->
 
     <!-- about section -->
     <section class="section pt-0" id="about">
-        <!-- container -->
         <div class="container text-center">
-            <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/linkedin photo.png" class="about-img revealable "
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/linkedin photo.png" class="about-img revealable" alt="Shaine Lomenario">
                 </div>
-                <div class="about-caption revealable ">
-                    <p class="section-subtitle">Who Am I ?</p>
+                <div class="about-caption revealable">
+                    <p class="section-subtitle">Who Am I?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
                         I'm the Marketing Director of 'Code for All' at Queens College. I enjoy playing the piano, video games, and basketball. 
@@ -95,461 +89,220 @@
                         My goal is to become a Software Engineer, with a growing interest in AI as my journey in computer science progresses. I am excited 
                         to showcase my skills and passion in the tech realm!
                     </p>
-                    <a href="https://drive.google.com/file/d/12P2pm5PFuiBVJ8IBxfbXxofqe44eJ0KC/view?usp=sharing" target = "blank">
-                        <button class="btn-rounded btn btn-outline-primary mt-4"> Resume </button> <!-- RESUME BUTTON -->
+                    <a href="https://drive.google.com/file/d/12P2pm5PFuiBVJ8IBxfbXxofqe44eJ0KC/view?usp=sharing" target="_blank">
+                        <button class="btn-rounded btn btn-outline-primary mt-4">Resume</button>
                     </a>
                 </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
+            </div>
+        </div>
     </section> <!-- end of about section -->
 
-
-
-        <!-- blog section -->
-        <section class="section" id="blog">
-            <!-- container -->
-            <div class="container text-center">
-                <!-- <p class="section-subtitle">Recent Posts?</p> -->
-                <h6 class="section-title mb-6 revealable"> Experience </h6>
-                <!-- blog-wrapper -->
-                <div class="blog-card revealable">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/headstarter background.png" class="blog-card-img"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div> <!-- PICTURE 1 -->
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title"> Software Engineer Fellow </h6>
-    
-                            <p class="blog-card-caption">
-                                <a> Headstarter AI </a>
-                                <!-- <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                                <a href="#"><i class="ti-comment"></i> 123</a> -->
-                            </p>
-                            <p> 7 week fellowship that gives an opportunity to build 5+ AI apps and APIs using NextJS, OpenAI, Pinecone, StripeAPI.
-                                Developed projects from design to deployment leading 4+ engineering fellows using MVC design patterns. Coached by 
-                                Amazon, Bloomberg and Capital One engineers on Agile, CI/CD, Git and microservice patterns. </p>
-    
-                            <!-- <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
-                            </p>
-                            <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
-                                cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p> -->
-    
-                            <!-- <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a> -->
-                    </div>
-                </div><!-- end of blog wrapper -->
-    
-                <!-- blog-wrapper -->
-                <div class="blog-card revealable">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/code.jpg" class="blog-card-img"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title"> Software Engineer Intern </h6>
-    
-                            <p class="blog-card-caption">
-                                <a> Reach for Cultural Heights (RICH) </a>
-                                <!-- <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                                <a href="#"><i class="ti-comment"></i> 264</a> -->
-                            </p>
-    
-                            <p> I collaborated with other interns to refine the RICH platform. I mentored high school students which enhanced the narrative impact, contributed to a 30% increase in audience
-                                engagement. Presented the project to a CUNY professor, demonstrating effective communication and project presentation skills, and received academic
-                                feedback for technological and educational enhancements. </p>
-    
-                            <!-- <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a> -->
-                    </div>
-                </div><!-- end of blog wrapper -->
-    
-            </div><!-- end of container -->
-        </section><!-- end of blog section -->
-
-    <!-- portfolio section -->
-    <!-- <section class="section" id="portfolio">
-        <div class="container text-center"> -->
-            <!-- <p class="section-subtitle">What I Did ?</p> -->
-            <!-- <h6 class="section-title mb-6"> Experience </h6> -->
-            <!-- row -->
-            <!-- <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                    <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                    <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                    <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>
-                        </span>
-                    </a>
-                </div> -->
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
-
-    <!-- pricing section -->
-    <!-- <section class="section" id="pricing">
+    <!-- Experience section -->
+    <section class="section" id="blog">
         <div class="container text-center">
-            <p class="section-subtitle">How Much I Charge ?</p>
-            <h6 class="section-title mb-6">My Pricing</h6> -->
-            <!-- row -->
-            <!-- <div class="pricing-wrapper">
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Free</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p><i class="ti-close"></i></p>
-                            <p><i class="ti-close"></i></p>
-                        </div>
-                    </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>0.00/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Basic</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p>accusamus laboriosam</p>
-                            <p><i class="ti-close"></i></p>
-                        </div>
-                    </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>9.99/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/startup.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Premium</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p>accusamus laboriosam</p>
-                            <p>inventore omnis</p>
-                        </div>
-                    </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>99.9/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
-                </div> -->
-
-            <!-- </div>end of pricing wrapper -->
-        <!-- </div> end of container -->
-    <!-- </section>end of pricing section -->
-
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light"> I love to collaborate! </h6>
-                    <p class="m-0 text-light"> Check out all of my works </p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href="https://github.com/shainelomenario" target = " ">
-                        <button class="btn btn-lg my-font btn-light rounded"> <i class="fab fa-github"></i> GitHub  </button>
-                    </a>
-
-                  
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
-
-    <!-- testimonial section -->
-    <!-- <section class="section" id="testmonial">
-        <div class="container text-center">
-            <p class="section-subtitle">What Think Client About Me ?</p>
-            <h6 class="section-title mb-6">Testmonial</h6> -->
-
-            <!-- row -->
-            <!-- <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
-                                adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
-                                adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> < end of container -->
-    <!-- </section> end of testimonial section --> 
-     <!-- IGNORE, NOT NEEDED FOR PORTFOLIO -->
-
-    <!-- blog section -->
-    <section class="section" id="blog proj">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- <p class="section-subtitle">Recent Posts?</p> -->
-            <h6 class="section-title mb-6 revealable" id = "projects"> Projects </h6>
-                        <!-- blog-wrapper -->
-                        <div class="blog-card revealable">
-                            <div class="blog-card-header">
-                                <img src="assets/imgs/AI Customer Support2.png" class="blog-card-img"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                            </div>
-                            <div class="blog-card-body">
-                                <h5 class="blog-card-title"> AI Customer Support </h6>
-            
-                                    <p class="blog-card-caption">
-                                        <!-- <a href="#">By: Admin</a>
-                                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                                        <a href="#"><i class="ti-comment"></i> 264</a>
-                                    </p> -->
-            
-                                    <p> ● Built an AI customer support chatbot with Next.js and OpenAI API to assist users with PC related-inquiries and budget planning. <br>
-                                        ● Implemented React, Vercel, and Pinecone for front-end development, deployment, and data management, enhancing performance. <br>
-                                        ● Enhanced user experience with real-time response streaming and advanced AI for personalized PC part recommendations.
-                                    </p>
-            
-                                    <a href="https://github.com/shainelomenario/ai-customer-support-bot" target = "_blank" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                            </div>
-                        </div><!-- end of blog wrapper -->
-            
-                        <!-- blog-wrapper -->
-                        <div class="blog-card revealable">
-                            <div class="blog-card-header">
-                                <img src="assets/imgs/pantry tracker.png" class="blog-card-img"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                            </div>
-                            <div class="blog-card-body">
-                                <h5 class="blog-card-title"> Inventory Tracker </h6>
-            
-                                    <p class="blog-card-caption">
-                                        <!-- <a href="#">By: Admin</a>
-                                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                                        <a href="#"><i class="ti-comment"></i> 264</a>
-                                    </p> -->
-            
-                                    <p> ● Developed a real-time inventory management application using React and Firebase, enabling efficient tracking and updates of inventory items.
-                                        <br>
-                                        ● Implemented asynchronous data fetching and state management with Firestore to ensure seamless and immediate reflection of inventory changes without requiring page refreshes.
-                                        <br>
-                                        ● Designed and integrated user-friendly UI components with Material-UI, including modals, buttons, and form inputs, to enhance user interaction and experience.
-                                    </p>
-            
-                                    <a href="https://github.com/shainelomenario/inventory-tracker" class="blog-card-link" target = "_blank">Read more <i class="ti-angle-double-right"></i></a>
-                            </div>
-                        </div><!-- end of blog wrapper -->
-
-            <!-- blog-wrapper -->
+            <h6 class="section-title mb-6 revealable">Experience</h6>
             <div class="blog-card revealable">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/Platform.png" class="blog-card-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div> <!-- PICTURE 1 -->
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title"> New Vision Launch </h6>
-
-                        <!-- <p class="blog-card-caption">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p> -->
-                        <p> ● Engineered a dynamic web platform specifically designed to promote CUNY's educational offerings to students, achieved a 25% increase
-                            in organizational reach.
-                            <br>
-                            ● Employed React to architect and refine the platform, enhancing user engagement through dynamic, component-based UIs and state
-                            management for real-time content updates.
-                            <br>
-                            ● Utilized Cyberduck with AWS S3 for efficient HTML/CSS deployment, achieving 99.9% uptime for 'New Vision' and ensuring seamless
-                            updates, enhancing user experience.</p>
-
-                        <!-- <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
-                        </p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
-                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p> -->
-
-                        <a href="https://github.com/shainelomenario/rich-new-vision" class="blog-card-link" target = "_blank">Read more <i class="ti-angle-double-right"></i></a>
+                    <img src="assets/imgs/headstarter background.png" class="blog-card-img" alt="Software Engineer Fellow">
                 </div>
-            </div><!-- end of blog wrapper -->
-
-
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
-
-        <!-- service section -->
-        <section class="section" id="service">
-            <div class="container text-center">
-                <!-- <p class="section-subtitle">What I Do ?</p> -->
-                <h6 class="section-title mb-6 revealable"> Awards and Certifications </h6>
-                <!-- row -->
-                <div class="row revealable">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/Amazon_Web_Services_Logo.svg.png"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                    class="icon">
-                                <h6 class="title"> AWS </h6>
-                                <p class="subtitle"> Dec 2024 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/Microsoft_Azure.svg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                    class="icon">
-                                <h6 class="title"> Azure </h6>
-                                <p class="subtitle"> Dec 2024 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/toolbox.svg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                    class="icon">
-                                <h6 class="title"> TBD </h6>
-                                <p class="subtitle"> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/analytics.svg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                    class="icon">
-                                <h6 class="title">TBD </h6>
-                                <p class="subtitle"> </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div><!-- end of row -->
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Software Engineer Fellow</h5>
+                    <p class="blog-card-caption">
+                        <a>Headstarter AI</a>
+                    </p>
+                    <p>7 week fellowship that gives an opportunity to build 5+ AI apps and APIs using NextJS, OpenAI, Pinecone, StripeAPI.
+                        Developed projects from design to deployment leading 4+ engineering fellows using MVC design patterns. Coached by 
+                        Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns.</p>
+                </div>
             </div>
-        </section><!-- end of service section -->
 
+            <div class="blog-card revealable">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/code.jpg" class="blog-card-img" alt="Software Engineer Intern">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Software Engineer Intern</h5>
+                    <p class="blog-card-caption">
+                        <a>Reach for Cultural Heights (RICH)</a>
+                    </p>
+                    <p>I collaborated with other interns to refine the RICH platform. I mentored high school students which enhanced the narrative impact, contributed to a 30% increase in audience
+                        engagement. Presented the project to a CUNY professor, demonstrating effective communication and project presentation skills, and received academic
+                        feedback for technological and educational enhancements.</p>
+                </div>
+            </div>
+        </div>
+    </section><!-- end of Experience section -->
+
+    <!-- project section -->
+    <section class="section" id="projects">
+        <div class="container text-center">
+            <h6 class="section-title mb-6 revealable">Projects</h6>
+
+            <!-- Project 1 -->
+            <div class="project-card revealable">
+                <div class="project-card-body">
+                    <h5 class="project-card-title">AI Customer Support</h5>
+                    <p>Built an AI customer support chatbot with Next.js and OpenAI API to assist users with PC-related inquiries and budget planning. Enhanced user experience with real-time response streaming and advanced AI for personalized PC part recommendations.</p>
+                    <a href="https://github.com/shainelomenario/ai-customer-support-bot" target="_blank" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card-img">
+                    <img src="assets/imgs/AI Customer Support2.png" alt="AI Customer Support Image">
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card revealable">
+                <div class="project-card-body">
+                    <h5 class="project-card-title">Inventory Tracker</h5>
+                    <p>Developed a real-time inventory management application using React and Firebase, enabling efficient tracking and updates of inventory items. Designed and integrated user-friendly UI components with Material-UI.</p>
+                    <a href="https://github.com/shainelomenario/inventory-tracker" target="_blank" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card-img">
+                    <img src="assets/imgs/pantry tracker.png" alt="Inventory Tracker Image">
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card revealable">
+                <div class="project-card-body">
+                    <h5 class="project-card-title">New Vision Launch</h5>
+                    <p>Engineered a dynamic web platform specifically designed to promote CUNY's educational offerings, achieving a 25% increase in organizational reach. Utilized React to enhance user engagement through dynamic UIs.</p>
+                    <a href="https://github.com/shainelomenario/rich-new-vision" target="_blank" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card-img">
+                    <img src="assets/imgs/Platform.png" alt="New Vision Launch Image">
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card revealable">
+                <div class="project-card-body">
+                    <h5 class="project-card-title">AI Flashcards & Stripe</h5>
+                    <p>COMING SOON.</p>
+                    <a href="https://github.com/shainelomenario/rich-new-vision" target="_blank" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card-img">
+                    <img src="assets/imgs/Platform.png" alt="AI Flashcards & Stripe Image">
+                </div>
+            </div>
+        </div>
+    </section><!-- end of project section -->
+
+
+
+    <!-- Awards and Certifications section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <h6 class="section-title mb-6 revealable">Awards and Certifications</h6>
+            <div class="row revealable">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/Amazon_Web_Services_Logo.svg.png" alt="AWS Certification" class="icon">
+                            <h6 class="title">AWS</h6>
+                            <p class="subtitle">Dec 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/Microsoft_Azure.svg" alt="Azure Certification" class="icon">
+                            <h6 class="title">Azure</h6>
+                            <p class="subtitle">Dec 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/toolbox.svg" alt="TBD" class="icon">
+                            <h6 class="title">TBD</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg" alt="TBD" class="icon">
+                            <h6 class="title">TBD</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- end of Awards and Certifications section -->
 
     <!-- contact section -->
     <section class="section revealable" id="contact">
         <div class="container text-center">
-            
-            <p class="section-subtitle"> Let's get in touch! </p>
+            <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            
             <!-- contact form -->
-            <form action="https://api.web3forms.com/submit" method = "POST" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
-                    <input type="hidden" name="access_key" value= "eba2f986-2932-41e3-be1f-eb92f7b2d686">
+                    <input type="hidden" name="access_key" value="eba2f986-2932-41e3-be1f-eb92f7b2d686">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" name = "name" required>
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" name="name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" name = "email" requried>
+                        <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
                     </div>
                 </div>
             </form><!-- end of contact form -->
-        </div><!-- end of container -->
+        </div>
     </section><!-- end of contact section -->
 
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">
-            <p class="mb-0"> <b> Shaine Lomenario </b>  
-                <a href="http://www.devcrud.com"> <b>&copy <script>document.write(new Date().getFullYear())</script></b>  </a>       
-            </p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://github.com/shainelomenario" target = "_blank" class = "link"><i class="ti-github"></i></a>
-                <a href="https://www.linkedin.com/in/shaine-lomenario/" target = "_blank" class="link"><i class="ti-linkedin"></i></a>
-                <a href="https://www.youtube.com/@LomeTech-os8oc" target = "_blank" class="link"><i class="ti-youtube"></i></a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <div class="contact-info mt-2">
+                        <div class="d-flex flex-column flex-md-row align-items-center mb-2">
+                            <i class="fas fa-phone-alt mr-2" style="color: #FFFFFF;"></i>
+                            <span>+1 929-704-9325</span>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-center mb-2">
+                            <i class="fas fa-envelope mr-2" style="color: #FFFFFF;"></i>
+                            <span>shainelomenario@gmail.com</span>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <i class="fas fa-map-marker-alt mr-2" style="color: #FFFFFF;"></i>
+                            <span>New York, NY, 11416</span>
+                        </div>
+                    </div>
+                    <br>
+                    <h6 class="footer-title">&copy; <script>document.write(new Date().getFullYear())</script> Shaine Lomenario. All Rights Reserved</h6>
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-right d-flex justify-content-md-end justify-content-center align-items-end">
+                    <ul class="social-links list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/shainelomenario" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/shaine-lomenario/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/@LomeTech-os8oc" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </footer>
-    </div> <!-- end of page footer -->
+        </div>
+    </footer>
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
 
@@ -558,7 +311,6 @@
 </html>
 
 <script>
-
 let animation = {
   revealDistance: 150,
   initialOpacity: 0,

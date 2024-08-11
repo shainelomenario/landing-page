@@ -12265,3 +12265,161 @@ pre .code {
   opacity: 1;
 }
 
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-body {
+  flex: 1;
+  text-align: left;
+  margin-right: 2rem;
+}
+
+.project-card-img {
+  flex: 0.5;
+  text-align: right;
+}
+
+.project-card-img img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-card-title {
+  color: #695aa6;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: #212529;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-link {
+  color: #17a2b8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .project-card-body {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+  }
+
+  .project-card-img {
+      text-align: center;
+  }
+}
+
+
+.blog-card,
+.service-card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px; /* Optional: adjust padding if needed */
+    margin-bottom: 20px; /* Optional: add margin if needed */
+}
+
+.contact-form {
+  max-width: 1200px; /* Increase this value to make the form wider */
+  width: 100%;
+  margin: 0 auto; /* Center the form */
+}
+
+.footer {
+  background-color: #695aa6; /* Light background color */
+  padding: 30px 0;
+  color: #FFFFFF; /* Dark text color for contrast */
+  border-top: 1px solid #e7e7e7; /* Subtle border at the top */
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #FFFFFF; /* Darker color for emphasis */
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  margin: 0;
+  color: #FFFFFF; /* Muted color for subtitle */
+}
+
+.social-links {
+  padding: 0;
+  margin: 0;
+}
+
+.social-links .list-inline-item {
+  margin-right: 15px;
+}
+
+.social-links .list-inline-item a {
+  color: #FFFFFF; /* Dark color for icons */
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-links .list-inline-item a:hover {
+  color: #212529; /* Dark accent on hover */
+}
+
+.footer .container {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+      text-align: center;
+  }
+
+  .social-links .list-inline-item {
+      margin-bottom: 10px;
+  }
+}
+
+#typewriter {
+  display: inline-block;
+  min-width: 200px; /* Adjust this to the maximum length of the text */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Ensure text stays within the element */
+  vertical-align: bottom; /* Aligns with other elements like buttons */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
