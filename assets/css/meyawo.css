@@ -11733,7 +11733,12 @@ pre .code {
 }
 
 .custom-navbar.affix .logo {
-  color: #695aa6;
+  background: linear-gradient(to right, #a64ac9, #4d9fef); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  color: transparent; /* Ensure the color doesn't override the gradient */
 }
 
 .custom-navbar.affix .container {
