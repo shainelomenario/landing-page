@@ -55,3 +55,40 @@ document.addEventListener('DOMContentLoaded', function () {
         
 });
 
+// Show or hide the "Back to Top" button
+window.onscroll = function() {
+    var backToTopButton = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.classList.add("show");
+    } else {
+        backToTopButton.classList.remove("show");
+    }
+};
+
+// Scroll back to the top when the button is clicked with smooth scrolling
+document.getElementById("back-to-top").onclick = function(event) {
+    event.preventDefault();
+    smoothScrollToTop(600); // Duration in milliseconds
+};
+
+// Function for smooth scrolling
+function smoothScrollToTop(duration) {
+    const startPosition = window.pageYOffset;
+    const startTime = performance.now();
+
+    function scrollStep(currentTime) {
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        window.scrollTo(0, startPosition * (1 - easeInOutQuad(progress)));
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(scrollStep);
+        }
+    }
+
+    function easeInOutQuad(t) {
+        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    }
+
+    requestAnimationFrame(scrollStep);
+}
