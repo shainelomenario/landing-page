@@ -12455,7 +12455,8 @@ pre .code {
 }
 
 .gradient-text2 {
-  background: linear-gradient(90deg, #8B4BFF, #B066FF) !important;
+  /* background: linear-gradient(90deg, #8B4BFF, #B066FF) !important; */
+  background: linear-gradient(90deg, #695aa6 0%, #7466b0 50%, #8073ba 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -12470,13 +12471,165 @@ pre .code {
 
 
 
+  #technical-skills {
+    padding: 50px 0;
+  }
+
+  #technical-skills .skills-box {
+    background-color: #330066; /* Outer box color */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Outer box shadow */
+  }
+
+  #technical-skills .skill-card {
+    background-color: #1a0033; /* Darker rectangle color */
+    border-radius: 15px; /* Slightly larger border radius */
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    padding: 25px; /* Increased padding for a bigger rectangle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+
+  #technical-skills .skill-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+
+  #technical-skills .skill-card .body {
+    text-align: center;
+  }
+
+  #technical-skills .skill-card .icon {
+    width: 60px; /* Increased icon size */
+    margin-bottom: 15px;
+  }
+
+  #technical-skills .skill-card .title {
+    font-size: 16px; /* Slightly larger text */
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px; /* Add margin to create space between the image and the title */
+  }
+
+  #technical-skills .gradient-text2 {
+    background: linear-gradient(to right, #ffe600, #ffae00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+
+
+#technical-skills .gradient-text2 {
+  background: linear-gradient(to right, #ffe600, #ffae00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Ensure 5 skills per row on larger screens, and adjust for smaller screens */
+#technical-skills .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Changed to space-around for better spacing */
+}
+
+#technical-skills .col-lg-2 {
+  max-width: 18%; /* Adjust to fit 5 cards per row on large screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) { /* Adjusts when screen is less than 992px */
+  #technical-skills .col-md-4 {
+      max-width: 33.33%; /* 3 skills per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) { /* Adjusts when screen is less than 768px */
+  #technical-skills .col-6 {
+      max-width: 50%; /* 2 skills per row on small screens */
+  }
+}
+
+@media (max-width: 576px) { /* Adjusts when screen is less than 576px */
+  #technical-skills .col-6 {
+      max-width: 100%; /* 1 skill per row on extra small screens */
+  }
+  #technical-skills .skill-card {
+      padding: 20px; /* Reduce padding on smaller screens */
+  }
+  #technical-skills .skill-card .icon {
+      width: 50px; /* Slightly smaller icons on extra small screens */
+  }
+}
 
 
 
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #000000 !important; /* Set the body background to black */
+  color: #ffffff !important; /* Ensure text color is white */
+}
 
+body.dark-mode .header {
+  background-color: #000000 !important; /* Set the header background to black */
+  background-image: linear-gradient(to bottom, #000000, #000000) !important; /* Fade to black */
+}
 
+body.dark-mode .header .overlay {
+  background-image: none !important; /* Remove any overlay gradient */
+}
 
+body.dark-mode .header-title,
+body.dark-mode .header-content .header-title .up,
+body.dark-mode .header-content .header-title .down,
+body.dark-mode .header-content .header-subtitle,
+body.dark-mode .header-content .btn {
+  color: #ffffff !important; /* Ensure text color is white */
+}
 
+body.dark-mode .header-mini {
+  background-color: #000000 !important; /* Ensure mini header background is black */
+  color: #ffffff !important; /* Ensure mini header text is white */
+}
 
+/* Ensure specific sections are black in dark mode */
+body.dark-mode #about-me,
+body.dark-mode #experience,
+body.dark-mode #projects,
+body.dark-mode #technical-skills,
+body.dark-mode #contact,
+body.dark-mode .footer {
+  background-color: #000000 !important; /* Ensure section background is black */
+  color: #ffffff !important; /* Ensure section text is white */
+}
 
+/* Ensure all text elements are white or purple in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode .text {
+  color: #ffffff !important; /* Default text color is white */
+}
 
+/* Optional: Use a lighter purple color for some text elements */
+body.dark-mode .highlight,
+body.dark-mode .text-highlight {
+  color: #a29bfe !important; /* Light purple color */
+}
+
+/* Ensure project boxes are black and text is black except for titles */
+body.dark-mode .project-box {
+  background-color: #000000 !important; /* Set project box background to black */
+  color: #000000 !important; /* Set project box text to black */
+}
+
+body.dark-mode .project-box .project-title {
+  color: #ffffff !important; /* Set project title text to white */
+}
