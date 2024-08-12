@@ -12476,7 +12476,7 @@ pre .code {
   }
 
   #technical-skills .skills-box {
-    background-color: #330066; /* Outer box color */
+    background: linear-gradient(135deg, #4B0082, #2C2C2C) !important;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Outer box shadow */
@@ -12570,9 +12570,10 @@ body.dark-mode {
   color: #ffffff !important; /* Ensure text color is white */
 }
 
+/* Header styles */
 body.dark-mode .header {
   background-color: #000000 !important; /* Set the header background to black */
-  background-image: linear-gradient(to bottom, #000000, #000000) !important; /* Fade to black */
+  background-image: url(../imgs/bgGIF5.gif) !important; /* Fade to black */
 }
 
 body.dark-mode .header .overlay {
@@ -12633,3 +12634,68 @@ body.dark-mode .project-box {
 body.dark-mode .project-box .project-title {
   color: #ffffff !important; /* Set project title text to white */
 }
+
+/* Ensure project card is black with white border */
+body.dark-mode .project-card {
+  background-color: #000000 !important; /* Set project card background to black */
+  color: #ffffff !important; /* Set project card text to white */
+  border: 1px solid #ffffff !important; /* Set project card border to white */
+}
+
+body.dark-mode .project-card .project-title {
+  color: #ffffff !important; /* Set project title text to white */
+}
+
+/* Ensure project card body is black */
+body.dark-mode .project-card-body {
+  background-color: #000000 !important; /* Set project card body background to black */
+  color: #ffffff !important; /* Set project card body text to white */
+}
+
+body.dark-mode .project-card-body .project-title {
+  color: #ffffff !important; /* Set project title text to white */
+}
+
+/* Ensure navigation bar is black in dark mode */
+body.dark-mode .navbar {
+  background-color: #000000 !important; /* Set navbar background to black */
+  color: #ffffff !important; /* Ensure navbar text is white */
+}
+
+body.dark-mode .navbar a {
+  color: #ffffff !important; /* Ensure navbar links are white */
+}
+
+/* Ensure custom navbar with affix class is black in dark mode */
+body.dark-mode .custom-navbar.affix {
+  background-color: #000000 !important; /* Set custom navbar background to black */
+  color: #ffffff !important; /* Ensure custom navbar text is white */
+}
+
+body.dark-mode .custom-navbar.affix a {
+  color: #ffffff !important; /* Ensure custom navbar links are white */
+}
+
+/* Ensure ul.nav.show is black in dark mode */
+body.dark-mode ul.nav.show {
+  background-color: #000000 !important; /* Set ul.nav.show background to black */
+  color: #ffffff !important; /* Ensure ul.nav.show text is white */
+}
+
+body.dark-mode ul.nav.show a {
+  color: #ffffff !important; /* Ensure ul.nav.show links are white */
+}
+
+/* Ensure project-card-revealable.active is black in dark mode */
+body.dark-mode .project-card-revealable.active {
+  background-color: #000000 !important; /* Set project-card-revealable.active background to black */
+  color: #ffffff !important; /* Ensure project-card-revealable.active text is white */
+}
+
+body.dark-mode .project-card-revealable.active a {
+  color: #ffffff !important; /* Ensure project-card-revealable.active links are white */
+}
+
+
+
+

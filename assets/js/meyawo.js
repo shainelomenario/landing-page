@@ -187,4 +187,3 @@ tsParticles.load("tsparticles", {
 });
 
 
-// Dark mode functionality 
