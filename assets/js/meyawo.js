@@ -185,5 +185,3 @@ tsParticles.load("tsparticles", {
     },
     retina_detect: true
 });
-
-
