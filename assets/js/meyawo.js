@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .pauseFor(2500)
         .deleteChars(21) 
         .pauseFor(500)
-        .typeString('AI Engineer')
+        .typeString('Software Engineer')
         .pauseFor(2500)
         .start();
         
